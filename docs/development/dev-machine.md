@@ -2,33 +2,33 @@ Set Up a Development Machine
 ============================
 
 Description of steps necessary for setting up a development environment
-for LibreClinica. These instructions are written for a **Linux** machine
+for I3LUNG. These instructions are written for a **Linux** machine
 but many if not all steps are same of similar for development on
 Windows/OSX.
 
 # Getting Source Code
 
-The LibreClinica source code is hosted on GitHub, and it is necessary to
+The I3LUNG source code is hosted on GitHub, and it is necessary to
 have a git client installed on the developer machine in order to
-download a local copy of LibreClinica.
+download a local copy of I3LUNG.
 
 ``` {.sourceCode .shell}
-$ git clone https://github.com/reliatec-gmbh/LibreClinica.git
+$ git clone https://github.com/reliatec-gmbh/I3LUNG.git
 ```
 
 If you have a GitHub account, and you are considering to contribute to
-LibreClinica project, it is also possible to first fork the project and
+I3LUNG project, it is also possible to first fork the project and
 clone it from your forked copy. This will allow you to define origin
 remote that will point to your fork on GitHub and upstream remote that
-will point to LibreClinica main repository. This way the pull requests
+will point to I3LUNG main repository. This way the pull requests
 can be easily submitted even if you do not have an official main
 contributor status (which opens the possibility to push directly to main
-LibreClinica repository).
+I3LUNG repository).
 
 # System Requirements
 
-Check the currently valid LibreClinica [system
-requirements](https://libreclinica.org/download.html).
+Check the currently valid I3LUNG [system
+requirements](https://I3LUNG.org/download.html).
 
 ## Java
 
@@ -56,12 +56,12 @@ CREATE ROLE clinica LOGIN ENCRYPTED PASSWORD 'clinica' SUPERUSER NOINHERIT NOCRE
 ```
 
 ``` {.sourceCode .sql}
-CREATE DATABASE libreclinica WITH ENCODING='UTF8' OWNER=clinica
+CREATE DATABASE I3LUNG WITH ENCODING='UTF8' OWNER=clinica
 ```
 
 ## Build Automation
 
-Maven is used for LibreClinica dependency management and build
+Maven is used for I3LUNG dependency management and build
 automation. IDE such IntelliJ IDEA can come with bundled Maven however
 some may prefer to download and install (unzip) a specific version of
 Maven to directory of your choice.
@@ -76,8 +76,8 @@ Maven to directory of your choice.
 
 Project can set up in IDE by using Open in pop up (Welcome) screen or by
 clicking of `File > Open` in IDE main window and selecting the parent
-LibreClinica folder created by git checkout process or the main pom.xml
-file in this folder. This will trigger the load of LibreClinica with all
+I3LUNG folder created by git checkout process or the main pom.xml
+file in this folder. This will trigger the load of I3LUNG with all
 its modules (currently there are 4 modules: core, odm, web and ws).
 
 ## Target JDK
@@ -126,9 +126,9 @@ On a next *Deployment* tab.
 
 1.  Use *plus* icon under *Deploy at the server startup*
 2.  Select *Artifact...*
-3.  Choose `LibreClinica-web:war`
+3.  Choose `I3LUNG-web:war`
 4.  Confirm with *OK*
-5.  Change application context to `/LibreClinica`
+5.  Change application context to `/I3LUNG`
 6.  You can remove the *build artifact* step from *Before launch*
     section (with *minus* icon) as this task will be executed as Maven
     goal
@@ -140,26 +140,26 @@ should download dependencies based on changes in module pom files. You
 may want to click on *Reload All Maven Projects* button, but it should
 not be necessary. What is necessary for *Maven install* goal to execute
 properly is toggle `Skip Tests mode` (flash in circle button). There is
-limited amount of unit tests in LibreClinica. Those that are there will
+limited amount of unit tests in I3LUNG. Those that are there will
 fail because of default database configuration and should not be
-considered for now. Making LibreClinica unit testable is one of our
+considered for now. Making I3LUNG unit testable is one of our
 goals for future.
 
 ## Debug
 
 After this you should be able to execute `Run > Debug`. Maven should
-compile LibreClinica, package it into *war* archive and IDE will perform
+compile I3LUNG, package it into *war* archive and IDE will perform
 deployment to configured Tomcat should take place. However, the first
 start of application will fail with deployment error due to missing
 config files.
 
-You need to create `libreclinica.config` folder in the folder where you
-installed the Tomcat (TOMCAT\_HOME). Locate the deployed LibreClinica in
+You need to create `I3LUNG.config` folder in the folder where you
+installed the Tomcat (TOMCAT\_HOME). Locate the deployed I3LUNG in
 the *webapps* folder of your Tomcat and copy the *datainfo.properties*
 template file from there.
 
 ``` {.sourceCode .bash}
-cp TOMCAT_HOME/webapps/LibreClinica/WEB-INF/classes/datainfo.properties TOMCAT_HOME/libreclinica.config/
+cp TOMCAT_HOME/webapps/I3LUNG/WEB-INF/classes/datainfo.properties TOMCAT_HOME/I3LUNG.config/
 ```
 
 You will need to edit this file to point to your database on developer
@@ -169,7 +169,7 @@ machine. The usual configuration follows:
 dbType=postgres
 dbUser=clinica
 dbPass=clinica
-db=libreclinica
+db=I3LUNG
 dbPort=5432
 dbHost=localhost
 ```
@@ -184,6 +184,6 @@ changelogs).
 Running system is listening on below-mentioned URL, with one Default
 Study where the root user is assigned to.
 
-[<http://localhost:8080/LibreClinica>](http://localhost:8080/LibreClinica)
+[<http://localhost:8080/I3LUNG>](http://localhost:8080/I3LUNG)
 
 Default user credentials are: User Name: root; Password: 12345678

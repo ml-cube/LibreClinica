@@ -1,9 +1,9 @@
 /*
- * LibreClinica is distributed under the
+ * I3LUNG is distributed under the
  * GNU Lesser General Public License (GNU LGPL).
 
- * For details see: https://libreclinica.org/license
- * LibreClinica, copyright (C) 2020
+ * For details see: https://I3LUNG.org/license
+ * I3LUNG, copyright (C) 2020
  */
 package org.akaza.openclinica.dao.login;
 
@@ -34,7 +34,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * <P>
- * UserAccountDAO, the data access object for the User_Account table in the LibreClinica 2.0 database.
+ * UserAccountDAO, the data access object for the User_Account table in the I3LUNG 2.0 database.
  *
  * @author thickerson
  *

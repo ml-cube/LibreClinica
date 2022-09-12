@@ -4,9 +4,9 @@
 <fmt:setBundle basename="org.akaza.openclinica.i18n.words" var="resword"/>
 <fmt:setBundle basename="org.akaza.openclinica.i18n.licensing" var="licensing"/>
     <div id="footerLinksDiv">
-    <a href="https://www.libreclinica.org" target="new"><fmt:message key="openclinica_portal" bundle="${resword}"/></a>
+    <a href="https://www.I3LUNG.org" target="new"><fmt:message key="openclinica_portal" bundle="${resword}"/></a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://www.libreclinica.org/documentation" target="new"><fmt:message key="help" bundle="${resword}"/></a>
+    <a href="https://www.I3LUNG.org/documentation" target="new"><fmt:message key="help" bundle="${resword}"/></a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <a href="Contact"><fmt:message key="contact" bundle="${resword}"/></a>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

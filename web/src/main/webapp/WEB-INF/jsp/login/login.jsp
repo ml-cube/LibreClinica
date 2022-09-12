@@ -47,7 +47,7 @@ session.setAttribute("factorService", factorService);
  
     <div class="login_BG">
 
-    <!-- LibreClinica logo -->
+    <!-- I3LUNG logo -->
 	<%String ua = request.getHeader( "User-Agent" );
 	String temp = "";
 	String iev = "";
@@ -61,7 +61,7 @@ session.setAttribute("factorService", factorService);
 	<%} else {%>
     <div ID="logo">&nbsp;</div>
   	<%}%>
-    <!-- end LibreClinica logo -->
+    <!-- end I3LUNG logo -->
         <table>
 
     <script type="text/javascript">

@@ -26,6 +26,6 @@
         	Study: %3$s
         	
         	<br><br>
-        	Your LibreClinica Administration
+        	Your I3LUNG Administration
         </font>
 	</html>

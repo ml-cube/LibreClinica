@@ -5,9 +5,9 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" >
 
-    <display-name>LibreClinica</display-name>
+    <display-name>I3LUNG</display-name>
     <description>
-        LibreClinica web services
+        I3LUNG web services
     </description>
 	
     <context-param>

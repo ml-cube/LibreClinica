@@ -1,15 +1,15 @@
 /*
- * LibreClinica is distributed under the
+ * I3LUNG is distributed under the
  * GNU Lesser General Public License (GNU LGPL).
 
- * For details see: https://libreclinica.org/license
- * LibreClinica, copyright (C) 2020
+ * For details see: https://I3LUNG.org/license
+ * I3LUNG, copyright (C) 2020
  */
 /*
- * LibreClinica is distributed under the GNU Lesser General Public License (GNU
+ * I3LUNG is distributed under the GNU Lesser General Public License (GNU
  * LGPL).
  *
- * For details see: https://libreclinica.org/license copyright 2003-2005 Akaza
+ * For details see: https://I3LUNG.org/license copyright 2003-2005 Akaza
  * Research
  *
  */
@@ -37,7 +37,7 @@ public class MetaDataVersionBean extends ElementOIDBean {
     private List<ItemGroupDefBean> itemGroupDefs;
     private List<ItemDefBean> itemDefs;
     private List<CodeListBean> codeLists;
-    // LibreClinica system has set softhard constraint on study level
+    // I3LUNG system has set softhard constraint on study level
     private String softhard;
     
     //openclinica extension

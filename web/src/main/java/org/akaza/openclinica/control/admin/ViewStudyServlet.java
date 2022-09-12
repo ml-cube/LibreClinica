@@ -1,9 +1,9 @@
 /*
- * LibreClinica is distributed under the
+ * I3LUNG is distributed under the
  * GNU Lesser General Public License (GNU LGPL).
 
- * For details see: https://libreclinica.org/license
- * LibreClinica, copyright (C) 2020
+ * For details see: https://I3LUNG.org/license
+ * I3LUNG, copyright (C) 2020
  */
 package org.akaza.openclinica.control.admin;
 
@@ -80,7 +80,7 @@ public class ViewStudyServlet extends SecureController {
             StudyParameterValueDAO spvdao = new StudyParameterValueDAO(sm.getDataSource());
             String participantStatusInOC = spvdao.findByHandleAndStudy(study.getId(), "participantPortal").getValue();
             if(participantStatusInOC=="") participantStatusInOC="disabled";
-            // Randomization is removed from LibreClinica
+            // Randomization is removed from I3LUNG
             study.getStudyParameterConfig().setRandomization("disabled");
 
              ParticipantPortalRegistrar  participantPortalRegistrar = new ParticipantPortalRegistrar();

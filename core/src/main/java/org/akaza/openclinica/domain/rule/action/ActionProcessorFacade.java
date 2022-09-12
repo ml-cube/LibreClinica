@@ -1,9 +1,9 @@
 /*
- * LibreClinica is distributed under the
+ * I3LUNG is distributed under the
  * GNU Lesser General Public License (GNU LGPL).
 
- * For details see: https://libreclinica.org/license
- * LibreClinica, copyright (C) 2020
+ * For details see: https://I3LUNG.org/license
+ * I3LUNG, copyright (C) 2020
  */
 package org.akaza.openclinica.domain.rule.action;
 
@@ -35,8 +35,8 @@ public class ActionProcessorFacade {
         case INSERT:
             return new InsertActionProcessor(ds, itemMetadataService, ruleActionRunLogDao, ruleSet, ruleSetRule);
         case RANDOMIZE:
-            // Randomization is removed from LibreClinica
-            throw new OpenClinicaSystemException("actionType", "action type 'RANDOMIZE' is not supported in LibreClinica!");
+            // Randomization is removed from I3LUNG
+            throw new OpenClinicaSystemException("actionType", "action type 'RANDOMIZE' is not supported in I3LUNG!");
         default:
             throw new OpenClinicaSystemException("actionType", "Unrecognized action type!");
         }

@@ -1,9 +1,9 @@
 /*
- * LibreClinica is distributed under the
+ * I3LUNG is distributed under the
  * GNU Lesser General Public License (GNU LGPL).
 
- * For details see: https://libreclinica.org/license
- * LibreClinica, copyright (C) 2020
+ * For details see: https://I3LUNG.org/license
+ * I3LUNG, copyright (C) 2020
  */
 package org.akaza.openclinica.dao.core;
 
@@ -353,12 +353,12 @@ public class CoreResources implements ResourceLoaderAware {
 
         String rss_url = DATAINFO.getProperty("rssUrl");
         if (rss_url == null || rss_url.isEmpty()) {
-            rss_url = "https://libreclinica.org/";
+            rss_url = "https://I3LUNG.org/";
         }
         DATAINFO.setProperty("rss.url", rss_url);
         String rss_more = DATAINFO.getProperty("rssMore");
         if (rss_more == null || rss_more.isEmpty()) {
-            rss_more = "https://libreclinica.org/";
+            rss_more = "https://I3LUNG.org/";
         }
         DATAINFO.setProperty("rss.more", rss_more);
 

@@ -1,15 +1,15 @@
 /*
- * LibreClinica is distributed under the
+ * I3LUNG is distributed under the
  * GNU Lesser General Public License (GNU LGPL).
 
- * For details see: https://libreclinica.org/license
- * LibreClinica, copyright (C) 2020
+ * For details see: https://I3LUNG.org/license
+ * I3LUNG, copyright (C) 2020
  */
 /*
- * LibreClinica is distributed under the
+ * I3LUNG is distributed under the
  * GNU Lesser General Public License (GNU LGPL).
 
- * For details see: https://libreclinica.org/license
+ * For details see: https://I3LUNG.org/license
  * copyright 2003-2011 Akaza Research
  */
 package org.akaza.openclinica.control.admin;
@@ -671,7 +671,7 @@ public class CreateCRFVersionServlet extends SecureController {
     }
 
     /**
-     * When the version is added, for each non-new item LibreClinica should check the RESPONSE_OPTIONS_TEXT, and
+     * When the version is added, for each non-new item I3LUNG should check the RESPONSE_OPTIONS_TEXT, and
      * RESPONSE_VALUES used for the item in other versions of the CRF.
      * 
      * For a given RESPONSE_VALUES code, the associated RESPONSE_OPTIONS_TEXT string is different than in a previous

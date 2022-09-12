@@ -1,17 +1,17 @@
 Development Workflows
 =====================
 
-Information about LibreClinica development and contribution workflows.
+Information about I3LUNG development and contribution workflows.
 
 # Version Control
 
-Git version control system is used for tracking changes in LibreClinica
+Git version control system is used for tracking changes in I3LUNG
 project repositories. Those are hosted publicly via [ReliaTec GmbH
 GitHub](https://github.com/reliatec-gmbh/) organisation.
 
 # Repository
 
-[LibreClinica](https://github.com/reliatec-gmbh/LibreClinica) (origin)
+[I3LUNG](https://github.com/reliatec-gmbh/I3LUNG) (origin)
 repository was created as a fork from
 [OpenClinica](https://github.com/OpenClinica/OpenClinica) (upstream)
 public repository. Certain naming conventions are defined in order to
@@ -21,7 +21,7 @@ prevent naming collisions (for versions, branches and tags).
 
 GitHub integrated issues management should be used to creates tickets
 before any code contributions. Tickets assigned to milestones that
-reflect the LibreClinica software versioning scheme. For each version an
+reflect the I3LUNG software versioning scheme. For each version an
 appropriate Kanban board is defined to track the progress of development
 activities.
 
@@ -141,17 +141,17 @@ $ git branch -d lc-hotfix-1.3.1
 
 # Tags
 
-Tags should be created for released LibreClinica versions.
+Tags should be created for released I3LUNG versions.
 
 # Release Versioning
 
-There is a need to start with fresh versioning scheme for LibreClinica
+There is a need to start with fresh versioning scheme for I3LUNG
 (independently from upstream) to allow independent release cycle.
 
 -   MAJOR.MINOR.PATCH
 
 Database scheme versioning is currently unchanged. Up until now there
-have not been changes in DB scheme introduced in LibreClinica since the
+have not been changes in DB scheme introduced in I3LUNG since the
 time of fork.
 
 # Contributions

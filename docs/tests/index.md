@@ -1,7 +1,7 @@
 
-test documentation for LibreClinica 1.0.0
+test documentation for I3LUNG 1.0.0
 
-# LibreClinica test documentation {docsify-ignore}
+# I3LUNG test documentation {docsify-ignore}
 
 | ID | title |
 | -- | ----- |

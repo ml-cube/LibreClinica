@@ -1,9 +1,9 @@
 /*
- * LibreClinica is distributed under the
+ * I3LUNG is distributed under the
  * GNU Lesser General Public License (GNU LGPL).
 
- * For details see: https://libreclinica.org/license
- * LibreClinica, copyright (C) 2020
+ * For details see: https://I3LUNG.org/license
+ * I3LUNG, copyright (C) 2020
  */
 package org.akaza.openclinica.service.usageStats;
 
@@ -51,7 +51,7 @@ public class LogUsageStatsService {
                                                                  // information
 
     // constants for event messages
-    public final static String event_msg_OC_started = "US003  LibreClinica was started";
+    public final static String event_msg_OC_started = "US003  I3LUNG was started";
     // constants for event detail parameters
     public final static String OC_start_time = "oc_start_time";
     // public final static String OC_init_complete_time = "init_complete_time";
@@ -62,7 +62,7 @@ public class LogUsageStatsService {
     public final static String OC_version = "OC Version";
 
     /**
-     * Method to log the event - start of LibreClinica initialization
+     * Method to log the event - start of I3LUNG initialization
      */
     public static void logEventOCStart(Map<String, String> eventDetailsMap) {
         // Format the event details
@@ -75,7 +75,7 @@ public class LogUsageStatsService {
                 mapEntry = mapIter.next();
                 if (null != mapEntry) {
                     if ((mapEntry.getKey().equalsIgnoreCase(OC_last_system_start)) && (mapEntry.getValue() == null)) {
-                        bufEventDetails.append(mapEntry.getKey() + ": " + "No Last System start time available; it could be first start of LibreClinica");
+                        bufEventDetails.append(mapEntry.getKey() + ": " + "No Last System start time available; it could be first start of I3LUNG");
                     } else if ((mapEntry.getKey().equalsIgnoreCase(OC_last_up_time)) && (mapEntry.getValue() == null)) {
 
                     } else {

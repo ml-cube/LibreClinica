@@ -18,8 +18,8 @@
 <table class="footer_table">
     <tr>
         <td class="footer_left">
-	        <a href="https://www.libreclinica.org" target="new"><fmt:message key="openclinica_portal" bundle="${resword}"/></a> |
-	        <a href="https://www.libreclinica.org/documentation" target="new"><fmt:message key="help" bundle="${resword}"/></a> |   
+	        <a href="https://i3lung.eu/" target="new"><fmt:message key="openclinica_portal" bundle="${resword}"/></a> |
+	        <a href="http://13.37.139.158:3000/" target="new"><fmt:message key="help" bundle="${resword}"/></a> |   
 	     	<a href="${pageContext.request.contextPath}/Contact"><fmt:message key="contact" bundle="${resword}"/></a>
         </td>
         <td class="footer_middle" >

@@ -11,6 +11,7 @@
     </properties>
     <dependencies />
     <build>
+    <pluginManagement>
         <plugins>
             <!-- Automate the creation of binding classes for XML schemas - JAXB marshall/ unmarshall -->
             <plugin>
@@ -71,6 +72,34 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>jaxb2-maven-plugin</artifactId>
+                <version>2.3.1</version>
+                <executions>
+                <execution>
+                <id>xjc</id>
+                <goals>
+                    <goal>xjc</goal>
+                </goals>
+                </execution>
+                </executions>
+                <configuration>
+                <xjbSources>
+                <xjbSource>conf/GlobalBindings.xjb</xjbSource>
+                </xjbSources>
+                <sources>
+                <source>conf/schema</source>
+                </sources>
+                <!-- Package name of the generated sources. <packageName>se.west</packageName> -->
+                <outputDirectory>src</outputDirectory>
+                <clearOutputDir>false</clearOutputDir>
+                <noGeneratedHeaderComments>true</noGeneratedHeaderComments>
+                <extension>true</extension>
+                <generateEpisode>false</generateEpisode>
+                </configuration>
+            </plugin>
         </plugins>
+        </pluginManagement>
     </build>
 </project>

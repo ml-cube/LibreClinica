@@ -20,7 +20,7 @@
 
 				</td>
 
-<!-- Help and LibreClinica Feedback Buttons -->
+<!-- Help and I3LUNG Feedback Buttons -->
 
                 <!-- 
 				<td valign="top">
@@ -35,7 +35,7 @@
 				</td>
 				 -->
 
-<!-- end Help and LibreClinica Feedback Buttons -->
+<!-- end Help and I3LUNG Feedback Buttons -->
 
 	<td valign="top" align="right">
 

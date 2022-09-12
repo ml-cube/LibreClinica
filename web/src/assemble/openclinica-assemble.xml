@@ -1,6 +1,6 @@
 <assembly>
-  <id>LibreClinica</id>
-  <baseDirectory>LibreClinica-${project.version}</baseDirectory>
+  <id>I3LUNG</id>
+  <baseDirectory>I3LUNG-${project.version}</baseDirectory>
   <formats>
     <format>zip</format>
   </formats>
@@ -32,7 +32,7 @@
   	<file>
   		<source>${project.build.directory}/${project.build.finalName}.war</source>
   		<outputDirectory>distribution</outputDirectory>
-  		<destName>LibreClinica.war</destName>
+  		<destName>I3LUNG.war</destName>
   	</file>
   </files>
 </assembly>

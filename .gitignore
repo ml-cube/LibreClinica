@@ -10,7 +10,7 @@ release.properties
 .project
 .settings/
 .idea/
-LibreClinica.iml
+I3LUNG.iml
 OpenClinica.iml
 web/src/main/resources/datainfo.properties
 core/*.iml

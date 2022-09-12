@@ -1,17 +1,17 @@
-LibreClinica 1.0 for Monitors
+I3LUNG 1.0 for Monitors
 =============================
 
-[https://libreclinica.org](https://libreclinica.org) © 2020
+[https://I3LUNG.org](https://I3LUNG.org) © 2020
 
 **Preface**
 
-This manual describes the main activities of the Monitor-role in LibreClinica 1.0: Source Data Verification and Discrepancy handling.
+This manual describes the main activities of the Monitor-role in I3LUNG 1.0: Source Data Verification and Discrepancy handling.
 
 To use this manual an account with the role of Monitor is the only requirement.
 
 Please contact us for manuals for the roles of Clinical Reasearch Coordinator and Investigator or if you would like a tailor-made manual, based on this one.
 
-[The LibreClinica Community](https://libreclinica.org)
+[The I3LUNG Community](https://I3LUNG.org)
 
 The manual is a distributed under the <a name="firstheading">Creative Commons Attribution-ShareAlike 3.0 Unported License . This means you are free to copy, distribute and transmit the work, and to adapt the work under the following conditions:</a>
 
@@ -35,9 +35,9 @@ The manual is a distributed under the <a name="firstheading">Creative Commons At
 
 1. [Change Study/Site](#change-study-site)
 
-1. [Your "Home" in LibreClinica](#your-home-in-libreclinica)
+1. [Your "Home" in I3LUNG](#your-home-in-I3LUNG)
 
-1. [How data is organised in LibreClinica](#how-data-is-organised-in-libreclinica)
+1. [How data is organised in I3LUNG](#how-data-is-organised-in-I3LUNG)
 
 1. [Source Data Verification](#source-data-verification)
 
@@ -58,7 +58,7 @@ The manual is a distributed under the <a name="firstheading">Creative Commons At
 
 # Choosing your browser and starting
 
-To use LibreClinica you need a browser. You can use Firefox (Mozilla) version 3 or higher, or Microsoft Internet Explorer version 7 or higher, or Chrome (Google) or Safari (Mac).
+To use I3LUNG you need a browser. You can use Firefox (Mozilla) version 3 or higher, or Microsoft Internet Explorer version 7 or higher, or Chrome (Google) or Safari (Mac).
 
 Furthermore your browser must be set up to execute Java-script.
 
@@ -70,20 +70,20 @@ In Internet Explorer you can check if Java-script is enabled by clicking menu op
 
 # Logging in
 
-To start LibreClinica, type in the address you've been given, e. g. [https://libreclinica.org/lc-demo/](https://libreclinica.org/lc-deb10/pages/login/login). You will automatically be routed to the login-screen.
+To start I3LUNG, type in the address you've been given, e. g. [https://I3LUNG.org/lc-demo/](https://I3LUNG.org/lc-deb10/pages/login/login). You will automatically be routed to the login-screen.
 You can log in with the user name and password that have been sent to you by mail. Click on button Login.
 ![login screen](monitor-manual_images/login_screen.png "login screen")
 
 # Changing your password on first time log-in
 
-Because this is the first time you log in to LibreClinica, you will be asked to change your password. In the form that opens, "Reset password", you are asked to once more type in the password you've been given, Old Password. In the next input you type your new password, directly followed by the same password, New Password and Confirm New Password.
+Because this is the first time you log in to I3LUNG, you will be asked to change your password. In the form that opens, "Reset password", you are asked to once more type in the password you've been given, Old Password. In the next input you type your new password, directly followed by the same password, New Password and Confirm New Password.
 ![reset password](monitor-manual_images/reset_password.png "reset password")
 
 After that you must choose a question plus the answer to that question. These will be used in case you have lost your password and have to request a new one. For example: Password Challenge Question you  choose Favorite Color, with Password Challenge Answer blue.
 
 # Logging out
 
-When you're finished with your LibreClinica-activities you must log out. This prevents unauthorized persons to view or change the data. You log out by clicking Log Out in the upper right corner of the screen.
+When you're finished with your I3LUNG-activities you must log out. This prevents unauthorized persons to view or change the data. You log out by clicking Log Out in the upper right corner of the screen.
 
 ![log out](monitor-manual_images/logout.png "log out")
 
@@ -103,12 +103,12 @@ After clicking button Confirm Profile Changes, the screen "Confirm User Profile 
 
 When you've lost your password you can request a reset of the password. A new, random password will be sent to the email-address you provided in your account-data. You request this new password by clicking Forgot Password? in the log in screen. The form "Request Password Form" opens.
 
-Type in User Name your user-name and in Email the email address, as used in LibreClinica. Then you select the Password Challenge Question and give your Password Challenge Answer. Click button Submit Password Request and after a few minutes a mail will be sent to you with the new password. After logging in with this new password, you must change it immediately, just as when you log in for the first time.
+Type in User Name your user-name and in Email the email address, as used in I3LUNG. Then you select the Password Challenge Question and give your Password Challenge Answer. Click button Submit Password Request and after a few minutes a mail will be sent to you with the new password. After logging in with this new password, you must change it immediately, just as when you log in for the first time.
 ![request password](monitor-manual_images/request_password.png "request password")
 
 # Change Study/Site
 
-When you log in to LibreClinica, your active study will be the study you last worked on. If you are assigned to more than one study, you can change to another study, by using the link Change Study/Site.
+When you log in to I3LUNG, your active study will be the study you last worked on. If you are assigned to more than one study, you can change to another study, by using the link Change Study/Site.
 
 You see in the upper-left corner the active Study "GCP-Service training study: Bremen (TDS0004: Site B)". If you want to change to site"Amsterdam" you click the radio-button and then click the button Change Study. The screen "Confirm Changing Study" opens and here you click on Confirm.
 
@@ -119,18 +119,18 @@ In the left column you see under Alerts & Messages "Your current active study ha
 
 Another option is when you have rights to a Study as a whole, so to all the sites. If you click the link "Change Study/Site" you can choose the Bortezomib-study and this will give you access to all sites in that study.
 
-# Your “Home” in LibreClinica
+# Your “Home” in I3LUNG
 ![monitor home](monitor-manual_images/monitor_home.png "monitor home")
 
 After you've logged in successfully your "Home"-screen opens. This screen displays the matrix for Source Data Validation, plus a link labeled Notes & Discrepancies Assigned to Me. You can always return to this screen by clicking Home in the menu in the top of screen. .
 
-Your main activities in LibreClinica will be Source Data Verification, or SDV, and Discrepancy Management. You can also view all data entered by using the Subject Matrix.
+Your main activities in I3LUNG will be Source Data Verification, or SDV, and Discrepancy Management. You can also view all data entered by using the Subject Matrix.
 
 As a Monitor it is not possible for you to enter Study-data, only to review data and handle queries about it.
 
-In LibreClinica the participants of a Study are called Subjects or StudySubjects. The Subjects are assigned to Sites.
+In I3LUNG the participants of a Study are called Subjects or StudySubjects. The Subjects are assigned to Sites.
 
-# How data is organised in LibreClinica
+# How data is organised in I3LUNG
 
 The visits that the Subjects make in the process of the Study are called Events.
 
@@ -140,11 +140,11 @@ Each CRF can have one or more tabs, or Sections, with input boxes for items.
 
 # Source Data Verification
 
-Source Data Verification is the process of comparing a source data with the data entered in LibreClinica. In the study-setup, the study-coordinator can give each CRF in each Event an "SDV-required-status". This status ranges from "not required", via "partially required" to "100% required".
+Source Data Verification is the process of comparing a source data with the data entered in I3LUNG. In the study-setup, the study-coordinator can give each CRF in each Event an "SDV-required-status". This status ranges from "not required", via "partially required" to "100% required".
 
-When you have checked that everything has been entered in LibreClinica according to the source data, then the CRF must be marked as "SDV'd".
+When you have checked that everything has been entered in I3LUNG according to the source data, then the CRF must be marked as "SDV'd".
 
-For items where the source data and the data in LibreClinica are different, you can create a Query, as described in [13](#--refheading--932-355433200) [An example of a Query](#--refheading--932-355433200).
+For items where the source data and the data in I3LUNG are different, you can create a Query, as described in [13](#--refheading--932-355433200) [An example of a Query](#--refheading--932-355433200).
 
 Start SDV by clicking the menu-option SDV in the menu in the top of your screen. You can also click menu Tasks, Monitor and Manage Data – Source Data Verification.
 
@@ -169,7 +169,7 @@ Only Subjects with CRFs Completed and not yet SDV'd can be a candidate for SDV a
 Normally you want to go through the CRFs of a Subject one by one. Choose the Subject you want to work with by clicking on the magnifier-icon in the right column. Now you are switched back to the tab "View By Event CRF", but this time filtered on the Subject you chose in the tab "View By Study Subject ID".
 
 If you want you, can add the two extra filters as described earlier, "SDV status = none" and SDV Requirement = 100% Required & Partial Required"
-You open a CRF for viewing, by clicking the icon in the column "CRF Status", which is either the completed-icon or the locked-icon in the column "CRF Status". A new browser window opens and with it you can verify that the data entered in the LibreClinica-CRF are the same as the source data. After you have reviewed it, close the window with the CRF. If by accident you click the "Exit" button, you will be redirected to the Subject Matrix. If this happens you can just close the browser window.
+You open a CRF for viewing, by clicking the icon in the column "CRF Status", which is either the completed-icon or the locked-icon in the column "CRF Status". A new browser window opens and with it you can verify that the data entered in the I3LUNG-CRF are the same as the source data. After you have reviewed it, close the window with the CRF. If by accident you click the "Exit" button, you will be redirected to the Subject Matrix. If this happens you can just close the browser window.
 
 ![mark CRFs SDVed](monitor-manual_images/mark_crf_sdv1.png "mark CRFs SDVed")
 ![mark CRFs SDVed](monitor-manual_images/mark_crf_sdv2.png "mark CRFs SDVed")
@@ -198,9 +198,9 @@ To the right of each input field is a flag. The color of this flag indicates if 
 
 # Notes & Discrepancies
 
-In LibreClinica four types of Discrepancy Notes exist: "Query", "Failed Validation Check", "Reason for Change" and "Annotation".
+In I3LUNG four types of Discrepancy Notes exist: "Query", "Failed Validation Check", "Reason for Change" and "Annotation".
 
-The first type, "Query", can only be created by a Monitor. Particularly during the process of Source Data Verification: if data entered in LibreClinica does not match the source data, the monitor can create a Query to ask the person responsible for data-entry, to correct the item. See paragrap [An example of a Query](#--refheading--932-355433200) [An example of a Query](#--refheading--932-355433200).
+The first type, "Query", can only be created by a Monitor. Particularly during the process of Source Data Verification: if data entered in I3LUNG does not match the source data, the monitor can create a Query to ask the person responsible for data-entry, to correct the item. See paragrap [An example of a Query](#--refheading--932-355433200) [An example of a Query](#--refheading--932-355433200).
 
 The second type, "Failed Validation Check", is raised if a value entered exceeds a certain range, or if a Validation check if violated, for example a weight of more than 150 kg. See paragraph [An example of a Failed Validation Check](#--refheading--1892-355433200) [An example of a Failed Validation Check](#--refheading--1892-355433200)
 
@@ -236,7 +236,7 @@ In the next four sections we will discuss how each type of Discrepancy is genera
 
 # An example of a Query
 
-Queries are made by Monitors, mostly in the process of Source Data Verification. When you compare the source data and the data in LibreClinica and find a difference, you create a Query. You do this in the CRF you are SDV-ing by clicking the flag to the right of the item that has a difference. A new window opens, "Add Discrepancy Note". Here you must give a short Desciption of what you found, a Detailed Note, that explains in detail what action must be taken. The Type of the Discrepancy is "Query" and can not be changed. The Status however can be chosen: "New", "Updated" or "Closed".
+Queries are made by Monitors, mostly in the process of Source Data Verification. When you compare the source data and the data in I3LUNG and find a difference, you create a Query. You do this in the CRF you are SDV-ing by clicking the flag to the right of the item that has a difference. A new window opens, "Add Discrepancy Note". Here you must give a short Desciption of what you found, a Detailed Note, that explains in detail what action must be taken. The Type of the Discrepancy is "Query" and can not be changed. The Status however can be chosen: "New", "Updated" or "Closed".
 
 For an example, let's say that the for "Height"  a value was entered of "120", while the Monitor reads "170" in the source data. Click on the flag next to the inputbox of "Height".
 
@@ -264,7 +264,7 @@ The Monitor-role is the only role that can Close a Discrepancy.
 
 # An example of a Failed Validation Check
 
-A Failed Validation Check is a Discrepancy that's automatically created by LibreClinica. For example on a field where the number of dispensed vials must be entered, an upperrange is defined of 240. If the user enters "250", this results in a message "[No. of dispensed vials must be between 0 and 241]". If this is indeed the number of vials as recorded in the source data, the user must enter this. In order to save the data he must first fill in the details of the Discrepancy.
+A Failed Validation Check is a Discrepancy that's automatically created by I3LUNG. For example on a field where the number of dispensed vials must be entered, an upperrange is defined of 240. If the user enters "250", this results in a message "[No. of dispensed vials must be between 0 and 241]". If this is indeed the number of vials as recorded in the source data, the user must enter this. In order to save the data he must first fill in the details of the Discrepancy.
 
 ![failed validation check](monitor-manual_images/failed_validation_check.png "failed validation check")
 

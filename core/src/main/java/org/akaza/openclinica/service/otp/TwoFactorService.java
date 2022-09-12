@@ -178,7 +178,7 @@ public class TwoFactorService {
     public void printoutCertificate(CertificateBean bean, OutputStream outStream) throws Exception {
         Paragraph paragraph1 = new Paragraph();
         paragraph1.setMaxWidth(500);
-        paragraph1.addText("LibreClinica\n", 28, COURIER);
+        paragraph1.addText("I3LUNG\n", 28, COURIER);
         paragraph1.addText("2-Factor Authentication Certificate\n\n", 24, COURIER);
         paragraph1.addText("General Information\n\n", 16, COURIER);
         paragraph1.addText(
@@ -238,8 +238,8 @@ public class TwoFactorService {
     private byte[] generateImageData(String secret) throws QrGenerationException {
         // @formatter:off
         QrData data = new QrData.Builder().
-                issuer("LibreClinica").
-                label(format("LibreClinica (%1$s)", extractSystemInfo(coreResources.getDATAINFO().getProperty(SYS_URL)))).
+                issuer("I3LUNG").
+                label(format("I3LUNG (%1$s)", extractSystemInfo(coreResources.getDATAINFO().getProperty(SYS_URL)))).
                 algorithm(SHA1).
                 secret(secret).
                 digits(6).

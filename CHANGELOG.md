@@ -24,7 +24,7 @@
 
 **enhancement:**
 * Enable SOAP compatible password generation (#248)
-* fixed issues for LibreClinica-ws (#205, #207)
+* fixed issues for I3LUNG-ws (#205, #207)
 * documentation on LDAP (#202)
 * add LDAPS support (#186)
 

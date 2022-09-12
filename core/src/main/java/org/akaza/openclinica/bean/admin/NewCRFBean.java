@@ -1,9 +1,9 @@
 /*
- * LibreClinica is distributed under the
+ * I3LUNG is distributed under the
  * GNU Lesser General Public License (GNU LGPL).
 
- * For details see: https://libreclinica.org/license
- * LibreClinica, copyright (C) 2020
+ * For details see: https://I3LUNG.org/license
+ * I3LUNG, copyright (C) 2020
  */
 
 package org.akaza.openclinica.bean.admin;
@@ -450,7 +450,7 @@ public class NewCRFBean extends Object implements java.io.Serializable {
             pe.printStackTrace();
             try {
                 con.rollback();
-                logger.debug("LibreClinica Error detected, rollback " + pe.getMessage());
+                logger.debug("I3LUNG Error detected, rollback " + pe.getMessage());
                 String msg2 = "The following error was returned from the application: " + pe.getMessage();
                 error.add(msg2);
                 this.setErrors(error);
@@ -458,7 +458,7 @@ public class NewCRFBean extends Object implements java.io.Serializable {
                 throw new OpenClinicaException("", "");
             } catch (SQLException seq) {
                 seq.printStackTrace();
-                logger.debug("LibreClinica Error within rollback " + seq.getMessage());
+                logger.debug("I3LUNG Error within rollback " + seq.getMessage());
                 String msg2 = "The following error was returned from the application: " + seq.getMessage();
                 error.add(msg2);
                 this.setErrors(error);
@@ -556,7 +556,7 @@ public class NewCRFBean extends Object implements java.io.Serializable {
             pe.printStackTrace();
             try {
                 con.rollback();
-                logger.debug("LibreClinica Error detected, rollback " + pe.getMessage());
+                logger.debug("I3LUNG Error detected, rollback " + pe.getMessage());
                 String msg2 = "The following error was returned from the application: " + pe.getMessage();
                 error.add(msg2);
                 this.setDeleteErrors(error);
@@ -564,7 +564,7 @@ public class NewCRFBean extends Object implements java.io.Serializable {
                 throw new OpenClinicaException("", "");
             } catch (SQLException seq) {
                 seq.printStackTrace();
-                logger.debug("LibreClinica Error within rollback " + seq.getMessage());
+                logger.debug("I3LUNG Error within rollback " + seq.getMessage());
                 String msg2 = "The following error was returned from the application: " + seq.getMessage();
                 error.add(msg2);
                 this.setDeleteErrors(error);
@@ -699,12 +699,12 @@ public class NewCRFBean extends Object implements java.io.Serializable {
             try {
                 error.add("The following error was returned from the application: " + pe.getMessage());
                 con.rollback();
-                logger.error("LibreClinica Error detected, rollback " + pe.getMessage());
+                logger.error("I3LUNG Error detected, rollback " + pe.getMessage());
                 throw new OpenClinicaException("", "");
             } catch (SQLException seq) {
                 error.add("The following error was returned from the application: " + seq.getMessage());
 
-                logger.error("LibreClinica Error within rollback " + seq.getMessage());
+                logger.error("I3LUNG Error within rollback " + seq.getMessage());
                 throw new OpenClinicaException("", "");
             }
 

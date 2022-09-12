@@ -1,15 +1,15 @@
 /*
- * LibreClinica is distributed under the
+ * I3LUNG is distributed under the
  * GNU Lesser General Public License (GNU LGPL).
 
- * For details see: https://libreclinica.org/license
- * LibreClinica, copyright (C) 2020
+ * For details see: https://I3LUNG.org/license
+ * I3LUNG, copyright (C) 2020
  */
 /*
- * LibreClinica is distributed under the
+ * I3LUNG is distributed under the
  * GNU Lesser General Public License (GNU LGPL).
 
- * For details see: https://libreclinica.org/license
+ * For details see: https://I3LUNG.org/license
  * copyright 2003-2010 Akaza Research
  */
 package org.akaza.openclinica.bean.rule;
@@ -89,7 +89,8 @@ public class FileUploadHelper {
 
         // Create a new file upload handler
         ServletFileUpload upload = new ServletFileUpload(factory);
-        upload.setFileSizeMax(getFileProperties().getFileSizeMax());
+        //upload.setFileSizeMax(getFileProperties().getFileSizeMax());
+        upload.setFileSizeMax(Long.valueOf(1000 * 1024 *1024));
         try {
             // Parse the request
             List<FileItem> items = upload.parseRequest(request);

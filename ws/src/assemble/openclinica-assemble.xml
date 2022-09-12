@@ -1,5 +1,5 @@
 <assembly>
-  <id>LibreClinica-ws</id>
+  <id>I3LUNG-ws</id>
   <formats>
     <format>zip</format>
   </formats>
@@ -31,7 +31,7 @@
   	<file>
   		<source>${project.build.directory}/${project.build.finalName}.war</source>
   		<outputDirectory>distribution</outputDirectory>
-  		<destName>LibreClinica-ws.war</destName>
+  		<destName>I3LUNG-ws.war</destName>
   	</file>
   </files>
 </assembly>

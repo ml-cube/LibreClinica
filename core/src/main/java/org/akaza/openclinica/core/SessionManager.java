@@ -1,9 +1,9 @@
 /*
- * LibreClinica is distributed under the
+ * I3LUNG is distributed under the
  * GNU Lesser General Public License (GNU LGPL).
 
- * For details see: https://libreclinica.org/license
- * LibreClinica, copyright (C) 2020
+ * For details see: https://I3LUNG.org/license
+ * I3LUNG, copyright (C) 2020
  */
 package org.akaza.openclinica.core;
 
@@ -23,7 +23,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
 
 /**
- * Utility which handles connection and login, as prompted by LibreClinica control servlets.
+ * Utility which handles connection and login, as prompted by I3LUNG control servlets.
  * Updated August 2004 to better handle connection pooling.
  * Updated again in August 2004 to support SQL Statements in XML.
  * Will require a change to all control servlets; new SessionManagers will have to be stored in session,

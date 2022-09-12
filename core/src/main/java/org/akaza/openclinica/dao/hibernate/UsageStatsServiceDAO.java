@@ -1,9 +1,9 @@
 /*
- * LibreClinica is distributed under the
+ * I3LUNG is distributed under the
  * GNU Lesser General Public License (GNU LGPL).
 
- * For details see: https://libreclinica.org/license
- * LibreClinica, copyright (C) 2020
+ * For details see: https://I3LUNG.org/license
+ * I3LUNG, copyright (C) 2020
  */
 /**
  * 
@@ -109,7 +109,7 @@ public class UsageStatsServiceDAO extends AbstractDomainDao<LogUsageStatsBean> {
                     parsedStopDate = dateFormat.parse(stopTime);
                 }
             } catch (ParseException pe) {
-                logger.error("Last LibreClinica stop time from database cannot be parsed");
+                logger.error("Last I3LUNG stop time from database cannot be parsed");
             }
             try {
                 if (null != startTime) {
@@ -117,7 +117,7 @@ public class UsageStatsServiceDAO extends AbstractDomainDao<LogUsageStatsBean> {
                     parsedStartDate = dateFormat.parse(startTime);
                 }
             } catch (ParseException pe) {
-                logger.error("Last LibreClinica start time from database cannot be parsed");
+                logger.error("Last I3LUNG start time from database cannot be parsed");
             }
             if ((null != parsedStopDate) && (null != parsedStartDate)) {
                 long diff = (parsedStopDate.getTime()) - (parsedStartDate.getTime());

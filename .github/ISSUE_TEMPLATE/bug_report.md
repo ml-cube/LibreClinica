@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Report a LibreClinica bug
+about: Report a I3LUNG bug
 title: "[BUG] "
 labels: bug
 assignees: ''

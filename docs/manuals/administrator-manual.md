@@ -1,17 +1,17 @@
-LibreClinica 1.2 for Administrators
+I3LUNG 1.2 for Administrators
 ===================================
 
-[https://libreclinica.org](https://libreclinica.org) © 2022
+[https://I3LUNG.org](https://I3LUNG.org) © 2022
 
 Preface
 
-This manual describes the main activities of the Administrator-role in LibreClinica 1.2.0: System Configuration, 2-Factor Authentication, automatic E-Mail notification, etc.
+This manual describes the main activities of the Administrator-role in I3LUNG 1.2.0: System Configuration, 2-Factor Authentication, automatic E-Mail notification, etc.
 
 To use this manual an account with the role of Administrator is the only requirement.
 
 Please contact us for other manuals for the roles of Clinical Research Coordinator or Monitor or if you would like a tailor-made manual, based on this one.
 
-[The LibreClinica Community](https://libreclinica.org)
+[The I3LUNG Community](https://I3LUNG.org)
 
 The manual is a distributed under the <a name="firstheading">Creative Commons Attribution-ShareAlike 3.0 Unported License . This means you are free to copy, distribute and transmit the work, and to adapt the work under the following conditions:</a>
 
@@ -33,17 +33,17 @@ The manual is a distributed under the <a name="firstheading">Creative Commons At
 
 # General 2-factor authentication configuration
 
-In general 2-factor authentication can be configured within _datainfo.properties_ file. It is deactivated by default to ensure not to break already running systems which upgrade from versions prior LibreClinica 1.2. The following options can be set:
+In general 2-factor authentication can be configured within _datainfo.properties_ file. It is deactivated by default to ensure not to break already running systems which upgrade from versions prior I3LUNG 1.2. The following options can be set:
 
 1 2fa.activated
 
-To generally enable 2-factor authentication just adjust the setting like this: _2fa.activated=true_. A restart of the LibreClinica application is required for the changes to take effect.
+To generally enable 2-factor authentication just adjust the setting like this: _2fa.activated=true_. A restart of the I3LUNG application is required for the changes to take effect.
 
 2 2fa.type
 
 There are two ways how the mandatory authentication code for the authenticator app is provided: APPLICATION (default), LETTER. 
 
-When set to _APPLICATION_ the user themselves are responsible for activating their accounts to use 2-factor authentication. The QR code gets directly displayed within LibreClinica application itself and can directly be scanned with the authenticator app. This settings is more convenient. But please note that this setting does not protect you from [man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack).
+When set to _APPLICATION_ the user themselves are responsible for activating their accounts to use 2-factor authentication. The QR code gets directly displayed within I3LUNG application itself and can directly be scanned with the authenticator app. This settings is more convenient. But please note that this setting does not protect you from [man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack).
 
 When set to _LETTER_ the QR code will be provided within a generated PDF file for printout. The PDF printout can then be made available by project managers via postal order to the according users. Nevertheless, this possibility means more manual work but the _LETTER_ option is a more secure way to avoid potential [man-in-the-middle attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack).
 
@@ -67,7 +67,7 @@ Note that there is no internet or network needed as authenticator apps are worki
 
 # Configuring 2-factor authentication (APPLICATION)
 
-The following workflow describes the procedure how _LibreClinica_ users can activate their account for 2-factor authentication.
+The following workflow describes the procedure how _I3LUNG_ users can activate their account for 2-factor authentication.
 
 Just log in to the system and click on _Tasks_ -> _Update Profile_. When switching _Authentication Type_ to _2-Factor Authentication_ the _QR-Code_ button gets visible. Click it to generate the QR code and scan it with your authenticator app on your mobile device. When successfully scanned the changes have to be confirmed by pressing _Confirm Profile Changes_ to finally update your profile changes.
 
@@ -75,7 +75,7 @@ Just log in to the system and click on _Tasks_ -> _Update Profile_. When switchi
 
 From now on login to the system will only be granted when providing the valid additional number code created by the authenticator app. The code will only be valid for about 30 seconds.
 
-Users are recommended to rename the scanned 2-factor profile within their authenticator app to ensure uniqueness when working with multiple _LibreClinica_ instances.
+Users are recommended to rename the scanned 2-factor profile within their authenticator app to ensure uniqueness when working with multiple _I3LUNG_ instances.
 
 # Configuring 2-factor authentication (LETTER)
 
@@ -106,5 +106,5 @@ The notification e-mail contains information regarding study/site, date, time an
 
 To provide PDF manuals for download in the applications Tasks menu for the roles _Administrator_, _Investigator_ or _Monitor_ the _display.manual_ setting has to be set to true (default is false) in the datainfo.properties config file. Please note that the distribution has to be build with the _include-pdf-manuals_ Maven profile (passed to `mvn clean package` by `-Pinclude-pdf-manuals`). With _exclude-pdf-manuals_ the PDF manuals are not generated and not part of the distribution.
 
-Independently of this feature the online manuals at libreclinica.org can be reached by following the "Documentation" link at the bottom of the application's pages.
+Independently of this feature the online manuals at I3LUNG.org can be reached by following the "Documentation" link at the bottom of the application's pages.
 
